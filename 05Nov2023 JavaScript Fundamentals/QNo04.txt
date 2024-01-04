@@ -1,0 +1,27 @@
+Solution:- Precedence and associativity are two concepts that determine the order in which operators are evaluated in an expression. These concepts are crucial for understanding how complex expressions are processed and can significantly impact the outcome of calculations.
+
+Precedence:- Precedence refers to the priority given to different operators. Operators with higher precedence are evaluated before operators with lower precedence.
+
+Example:
+let result = 3 + 5 * 2;//in this example, multiplication has a higher precedence than
+                       addition, so 5 * 2 is evaluated first, and then the result is added to 3.
+
+
+Associativity:-Associativity defines the order in which operators of the same precedence are evaluated when they appear in a sequence.
+
+Example:    
+let result = 10 - 5 - 2;//In this example, the subtraction operator has left-to-right  
+                         associativity, so 10 - 5 is evaluated first, and then the result is subtracted by 2.
+
+
+Understanding precedence and associativity is important for several reasons:
+
+Correctness of Expressions:- Knowing the precedence ensures that expressions are evaluated in the intended order. Without this understanding, the result of an expression might be unexpected.
+
+Avoiding Ambiguity:- When an expression contains multiple operators, understanding their associativity helps avoid ambiguity and determines the correct order of evaluation.
+
+Efficient Coding:- Knowledge of operator precedence allows developers to write expressions without unnecessary parentheses, making the code more concise and readable.
+
+Debugging:- Incorrect assumptions about precedence and associativity can lead to subtle bugs. Understanding these concepts facilitates effective debugging.
+
+Optimizing Code:- Knowledge of precedence and associativity can be used to optimize code by avoiding unnecessary parentheses and ensuring efficient computation.

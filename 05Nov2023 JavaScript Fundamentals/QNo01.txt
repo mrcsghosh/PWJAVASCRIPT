@@ -1,0 +1,10 @@
+Solution:- Operators in JavaScript are symbols or keywords that perform operations on operands, which can be values or variables. These operations can include arithmetic calculations, logical evaluations, comparisons, and more. Operators play a crucial role in programming for several reasons:
+
+It can be Used to:-
+
+Perform Arithmetic Operations,
+Comparison Operators,
+Perform Logical Operations,
+Assigning Values,
+Bitwise Operations,
+Conditional (Ternary) Operator.
