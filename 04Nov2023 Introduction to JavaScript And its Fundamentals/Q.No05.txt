@@ -1,0 +1,29 @@
+Solution:- Comments in JavaScript are essential for providing additional information, explanations, or documentation within the code. They are not executed by the JavaScript engine and are purely for the benefit of developers.
+
+Comments can serve several important purposes:
+
+Code Explanation:- Comments help explain the purpose of the code, describe complex algorithms, or provide insights into the developer's thought process. This makes the code more understandable for others (or even for yourself in the future).
+
+Documentation:- Well-commented code serves as documentation, aiding other developers who might work on or maintain the codebase. It can also help with onboarding new team members.
+
+Debugging:- Comments can be used to temporarily disable or comment out portions of code during debugging, allowing developers to test specific sections without removing the code entirely.
+
+Communication:- Comments facilitate communication among team members by providing insights, suggestions, or warnings about specific code sections.
+
+Here are examples of single-line and multi-line comments in JavaScript:
+
+Single-line comment:- Use double slashes (//) to create single-line comments. Anything after // on the same line is considered a comment and is not executed by the JavaScript interpreter.
+
+// This is a single-line comment
+let age = 25;  // Variable representing the age
+
+Multi-line comment:- Use /* to begin a multi-line comment and */ to end it. Everything between these symbols is treated as a comment, allowing you to write comments spanning multiple lines
+
+/*
+  This is a multi-line comment
+  It spans multiple lines and is useful for longer explanations
+*/
+let pi = 3.14;  // Variable representing the mathematical constant
+
+
+Keep in mind that while comments are valuable, it's also important to maintain them and ensure they stay up to date with changes in the code. Clear and well-maintained comments can significantly improve the readability and maintainability of your JavaScript code.

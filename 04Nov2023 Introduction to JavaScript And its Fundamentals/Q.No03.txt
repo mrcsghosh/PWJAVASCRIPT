@@ -1,0 +1,40 @@
+Solution:- 
+
+String:- Represents sequences of characters. Strings are used to store and manipulate text.
+Example:
+javascript:-
+<script>
+let name = "John";
+let greeting = "Hello, World!";
+let templateLiteral = `My name is ${name}`;
+</script>
+
+Number:- Represents numeric values. Numbers can be integers or floating-point numbers.
+Example:
+javascript:-
+<script>
+let age = 25;
+let pi = 3.14;
+</script>
+
+Boolean:- Represents a logical value indicating true or false.
+Example:
+javascript:-
+<script>
+let isStudent = true;
+let hasLicense = false;
+</script>
+
+Null:- Represents the absence of any value or a null object reference.
+Example:
+javascript:-
+<script>
+let emptyValue = null;
+</script>
+
+Undefined:- Represents a variable that has been declared but has not been assigned a value.
+Example:
+javascript:-
+<script>
+let undefinedValue;
+</script>

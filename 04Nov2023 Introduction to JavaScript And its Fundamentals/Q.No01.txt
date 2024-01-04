@@ -1,0 +1,7 @@
+Solution:- JavaScript is a high-level, versatile programming language primarily used in web development. Its fundamental role is to enhance web pages by adding interactivity and dynamic behavior. JavaScript runs directly in web browsers, allowing developers to create features such as form validation, animations, and realtime updates.
+
+
+JavaScript interacts with the Document Object Model (DOM), which represents the webpage's structure. This interaction enables developers to manipulate and modify webpage content, styles, and layout in response to user actions. JavaScript also handles events, making it possible to create interactive web applications.
+
+
+Furthermore, JavaScript supports asynchronous programming, crucial for tasks like sending and receiving data from web servers without blocking the user interface. It has a vast ecosystem of libraries and frameworks, such as React and Angular, that simplify and accelerate web development.

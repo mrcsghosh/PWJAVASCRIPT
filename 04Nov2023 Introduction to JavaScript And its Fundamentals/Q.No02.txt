@@ -1,0 +1,39 @@
+Solution:-
+
+HTML:- 
+Structure and Content: HTML is used to structure the content of a webpage. It defines the basic elements such as headings, paragraphs, lists, and images.
+
+Semantic Markup: HTML provides semantic elements that convey the meaning of the content, making it accessible to both browsers and developers.
+
+Linking: HTML is used to create hyperlinks that connect different pages or resources on the web.
+
+JavaScript:-
+Interactivity: JavaScript is crucial for adding interactivity to a webpage. It allows developers to respond to user actions, such as clicks, input, and form submissions.
+
+Dynamic Content: JavaScript enables the modification of the DOM, allowing developers to update content dynamically without requiring a page reload.
+
+Asynchronous Operations: JavaScript is commonly used for making asynchronous requests to servers (AJAX) to fetch or send data without refreshing the entire page.
+
+Form Validation: JavaScript can be used to validate form inputs on the client side before submitting data to the server.
+
+
+//Code where we Use both HTML and JavaScript
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Example</title>
+  <script>
+    // JavaScript code to display an alert when the page loads
+window.onload = function() {
+  alert("Hello, this is an My Example!");
+};
+  </script>
+</head>
+<body>
+  <h1>Welcome to the My Example of JS and HTML both code</h1>
+</body>
+</html>
+
