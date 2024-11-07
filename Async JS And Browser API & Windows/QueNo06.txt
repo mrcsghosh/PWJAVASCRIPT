@@ -1,0 +1,75 @@
+/************    Purpose of localStorage and sessionStorage   ****************\
+
+The Web Storage API provides localStorage and sessionStorage as mechanisms to store key-value pairs in the browser. They are widely used for saving data on the client side to avoid constant requests to the server and enhance user experience.
+
+/********************   localStorage  ******************************\
+
+Stores data with no expiration date, meaning the data persists across sessions (even when the browser is closed and reopened).
+Commonly used for persisting user preferences, theme settings, or data that needs to be retained between visits.
+
+
+/***********************       sessionStorage   **************************\
+
+Stores data for the duration of the page session. The data is cleared once the page session ends (e.g., when the browser tab or window is closed).
+Useful for temporarily storing data that only needs to be available during the current session, such as form data or temporary user states.
+
+
+/****************       Example of localStorage  ***************************\
+
+ the user’s preferred theme (light or dark) so that their choice is remembered even after they close the browser.
+
+
+// Set the theme in localStorage
+function setTheme(theme) {
+    localStorage.setItem('theme', theme);
+    document.body.className = theme;
+}
+
+// Get the theme from localStorage
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.body.className = savedTheme;
+    } else {
+        // Default theme
+        document.body.className = 'light';
+    }
+}
+
+// Usage
+setTheme('dark'); // Set the theme to dark
+loadTheme();       // Load the theme on page load
+
+
+
+//**********************   Example of sessionStorage  *********************\
+
+ the user’s input temporarily until they complete the form or close the tab. sessionStorage is a suitable option here since the data will only persist for the duration of the tab session.
+
+
+// Save form data to sessionStorage
+function saveFormData() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    sessionStorage.setItem('name', name);
+    sessionStorage.setItem('email', email);
+}
+
+// Load form data from sessionStorage
+function loadFormData() {
+    const savedName = sessionStorage.getItem('name');
+    const savedEmail = sessionStorage.getItem('email');
+
+    if (savedName) {
+        document.getElementById('name').value = savedName;
+    }
+    if (savedEmail) {
+        document.getElementById('email').value = savedEmail;
+    }
+}
+
+// Usage: Call saveFormData on input change and loadFormData on page load
+document.getElementById('name').addEventListener('input', saveFormData);
+document.getElementById('email').addEventListener('input', saveFormData);
+window.addEventListener('load', loadFormData);

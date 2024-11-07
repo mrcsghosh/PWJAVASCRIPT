@@ -1,0 +1,34 @@
+/********************* APIs  **********************\
+JavaScript provides developers with access to several powerful Browser APIs that enable interaction with various web page and browser features. Here are some common Browser APIs that JavaScript developers frequently use:
+
+/**************       DOM (Document Object Model) API  ************************\
+
+The DOM API allows JavaScript to interact with and manipulate the HTML and CSS of a webpage. With this API, developers can add, modify, or delete elements and content, update styles, and handle user interactions.
+Example: document.getElementById(), document.querySelector(), and element.addEventListener().
+
+
+/*************************   Fetch API            *********************\
+
+The Fetch API enables developers to make network requests to retrieve resources, such as data from an API, without reloading the page. It is a modern replacement for XMLHttpRequest and provides a more readable syntax for working with promises.
+Example: fetch('https://api.example.com/data').then(response => response.json()).
+
+/********************    Geolocation API       ************************\
+ 
+The Geolocation API provides access to the user’s geographical location, with the user’s permission. It is commonly used for location-based services like mapping, finding nearby points of interest, or tracking user movements.
+Example: navigator.geolocation.getCurrentPosition().
+
+/*****************      Local Storage API    *******************************\
+
+Local Storage is part of the Web Storage API and allows developers to store data persistently in the browser. Data stored in localStorage is saved across sessions and remains even after the browser is closed, unlike sessionStorage, which is cleared when the page session ends.
+Example: localStorage.setItem('key', 'value');, localStorage.getItem('key').
+
+
+/*****************    Canvas API       *******************************\
+
+The Canvas API provides methods for drawing graphics, shapes, images, and even animations directly within an HTML <canvas> element. It is commonly used for creating interactive games, visualizations, and image editing applications.
+Example: canvas.getContext('2d').fillRect(x, y, width, height).
+
+/*************************  WebSockets API   ***************************\
+  
+The WebSockets API allows for real-time, bidirectional communication between a client and server over a persistent connection. It is commonly used for chat applications, live updates, and online games.
+Example: let socket = new WebSocket("ws://example.com/socket"); socket.send("Hello, Server!");.

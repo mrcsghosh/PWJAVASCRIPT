@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The XMLHttpRequest object</title>
+</head>
+
+<body>
+    <button type="button" id="btn" onclick="request()">Get the Users Name</button>
+    <h1>User Names</h1>
+    <div class="div" id="user-list"></div>
+
+
+    <script>
+
+
+        function request() {
+
+            // Create a new XMLHttpRequest object
+            let xhr = new XMLHttpRequest();
+
+            // Configure it: GET-request for the URL
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/users", true);
+
+            // Define the callback function
+            xhr.onreadystatechange = function () {
+                // Check if the request is complete (readyState 4) and successful (status 200)
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Parse the JSON response text
+                    let users = JSON.parse(xhr.responseText);
+
+                    // Get the HTML element to display the user names
+                    let userListDiv = document.getElementById("user-list");
+
+                    // Initialize an empty string to hold the HTML content
+                    let htmlContent = "<ul>";
+
+                    // Extract user names and display them
+                    users.forEach(user => {
+                        console.log(user.name);  // Log each user name to the console
+
+                        // Append each user name as a list item in the HTML content
+                        htmlContent += `<li>${user.name}</li>`;
+                    });
+
+                    // Close the unordered list tag
+                    htmlContent += "</ul>";
+
+                    // Set the HTML content inside the div
+                    userListDiv.innerHTML = htmlContent;
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        };
+
+    </script>
+</body>
+
+</html>

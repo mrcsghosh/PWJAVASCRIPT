@@ -1,0 +1,44 @@
+/*********       The XMLHttpRequest object     **************\
+
+The XMLHttpRequest object is a built-in JavaScript object that allows web pages to make asynchronous HTTP requests to a server. It was introduced by Microsoft in Internet Explorer and later became a part of the AJAX (Asynchronous JavaScript and XML) programming technique. This object allows web pages to request data from a server without refreshing the entire page, enabling faster and more interactive user experiences.
+
+/***************   Use in AJAX    ****************\
+
+In AJAX, the XMLHttpRequest object is crucial for handling asynchronous communication between a client (browser) and a server. Here’s a breakdown of how it’s used:
+
+Create an Instance: First, an instance of XMLHttpRequest is created.
+
+
+//Code example
+let xhr = new XMLHttpRequest();
+
+
+
+
+Configure the Request: Use the .open() method to specify the type of request (GET, POST, etc.), the URL of the server, and whether the request should be asynchronous (true or false).
+
+//cODE example
+xhr.open("GET", "https://example.com/data", true);
+
+
+
+Send the Request: Use the .send() method to send the request to the server.
+
+//CODE example
+xhr.send();
+
+Handle the Response: Use the .onreadystatechange or .onload event handlers to process the server’s response. The .onreadystatechange event handler is triggered each time the readyState property changes, while .onload is triggered once the request completes successfully.
+
+//CODE example
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log(xhr.responseText);
+    }
+};
+
+
+readyState: Indicates the current state of the request (0 to 4).
+
+status: Contains the HTTP status code (200 for success, 404 for not found, etc.).
+
+responseText: Contains the response data as a string.
